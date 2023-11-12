@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logout{
+    margin-left: 5px;
+}
+
+.top{
+    padding: 10px 5px;
+}
+
+#div2{
+    padding: 15px;
+}
+
+#div{
+    margin-top: 10px;
+}
+
+.h1{
+    padding: 10px;
+}
+
+#but{
+    margin-left: 5px;
+}
+
+#buy{
+    margin-left: 5px;
+}
+
+#div3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.block{
+    height: 480px;
+}
+
+#butt{
+    background-color: brown;
+    opacity: 0.3;
+    color: white;
+    width: 40px;
+}
+
+#butt2{
+        background-color: brown;
+        opacity: 0.5;
+        color: white;
+        width: 40px;
+}
+
+#first{
+    padding: 0 150px;
+}
+
+#second{
+    padding: 0 150px;
+}
+
+#third{
+    padding: 0 150px;
+}
+
+#four{
+    padding: 0 150px;
+}
+
+#five{
+    padding: 0 150px;
+}
+
+#color{
+    color: grey;
+}
