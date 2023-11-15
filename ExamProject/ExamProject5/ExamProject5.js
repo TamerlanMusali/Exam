@@ -8,6 +8,7 @@ for (let user of users) {
 
 const allTabPanes = document.querySelectorAll('.tab-pane')
 
+
 for (let tabPane of allTabPanes) {
     for (let user2 of users) {
         for (let comp2 of computers) {
@@ -37,30 +38,27 @@ $('.tab-content').click(function (e) {
     if (e.target.innerHTML === 'В деталях') {
         id = e.target.id
         const currentDetal = computers.find(comp2 => comp2.id + 'B' === id)
-        for (let comp2 of computers) {
-            for (let user2 of users) {
-                $('.modal-body').html('')
-                $('.modal-body').html($('.modal-body').html() + `
+                
+                    $('.modal-body').html('')
+                    $('.modal-body').html($('.modal-body').html() + `
         <div class="card">
         <div class="img3">
-        <img src="${comp2.img}" alt="">
+        <img src="${currentDetal.img}" alt="">
 </div>
 <div class="card-body">
-    <p class="ppp" id="name2">Name:${comp2.name}</p>
-    <p class="ppp" id="description2">Description:${comp2.description}</p>
-    <p class="ppp" id="price2">Price:${comp2.price + ' Azn'}</p>
-    <p class="ppp" id="phone3">Phone:${user2.phone}</p>
-    <p class="ppp" id="new2">New:${comp2.new}</p>
-    <p class="ppp" id="ram2">Ram:${comp2.ram + ' GB'}</p>
-    <p class="ppp" id="cpu2">CPU:${comp2.centralProcessor}</p>
-    <p class="ppp" id="permanentMemory2">Permament memory:${comp2.permanentMemory + ' GB'}</p>
-    <p class="ppp" id="permanentMemoryType2">Permament memory type:${comp2.permanentMemoryType}</p>
-    <p class="ppp" id="operatingSystem2">Operating system:${comp2.operatingSystem}</p>
-    <p class="ppp" id="videoCard2">Video card:${comp2.videoCard + ' GB'}</p>
+    <p class="ppp" id="name2">Name:${currentDetal.name}</p>
+    <p class="ppp" id="description2">Description:${currentDetal.description}</p>
+    <p class="ppp" id="price2">Price:${currentDetal.price + ' Azn'}</p>
+    <p class="ppp" id="phone3">Phone:${currentDetal.Phone}</p>
+    <p class="ppp" id="new2">New:${currentDetal.new}</p>
+    <p class="ppp" id="ram2">Ram:${currentDetal.ram + ' GB'}</p>
+    <p class="ppp" id="cpu2">CPU:${currentDetal.centralProcessor}</p>
+    <p class="ppp" id="permanentMemory2">Permament memory:${currentDetal.permanentMemory + ' GB'}</p>
+    <p class="ppp" id="permanentMemoryType2">Permament memory type:${currentDetal.permanentMemoryType}</p>
+    <p class="ppp" id="operatingSystem2">Operating system:${currentDetal.operatingSystem}</p>
+    <p class="ppp" id="videoCard2">Video card:${currentDetal.videoCard + ' GB'}</p>
 </div>
         `
-)
-            }
-        }
+                    )
     }
 })
